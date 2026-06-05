@@ -78,19 +78,19 @@ st.markdown("""
     /* เนื้อหาทั่วไปตัวหนาเป็นสีเข้มปกติ */
     .edit-box strong, .edit-box b { color: #0F172A; font-weight: 700; }
     
-    /* Box Styles สำหรับ UI หน้าเว็บ */
-    .box-intro { background-color: #F8FAFC; border-left: 4px solid #94A3B8; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-concept { background-color: #EEF2FF; border-left: 4px solid #6366F1; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-mech { background-color: #F1F5F9; border-left: 4px solid #475569; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-clinic { background-color: #F0FDFA; border-left: 4px solid #14B8A6; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-warn { background-color: #FFF7ED; border-left: 4px solid #F97316; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-trick { background-color: #FEF9C3; border-left: 4px solid #EAB308; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-hy { background-color: #FFF1F2; border-left: 4px solid #F43F5E; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-quiz { background-color: #F0F9FF; border-left: 4px solid #0EA5E9; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-    .box-ans { background-color: #F0FDF4; border-left: 4px solid #22C55E; padding: 12px 16px; margin: 16px 0 12px 0; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+    /* Box Styles สำหรับ UI หน้าเว็บ - ปรับให้กะทัดรัด ประหยัดพื้นที่ */
+    .box-intro { background-color: #F8FAFC; border-left: 4px solid #94A3B8; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-concept { background-color: #EEF2FF; border-left: 4px solid #6366F1; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-mech { background-color: #F1F5F9; border-left: 4px solid #475569; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-clinic { background-color: #F0FDFA; border-left: 4px solid #14B8A6; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-warn { background-color: #FFF7ED; border-left: 4px solid #F97316; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-trick { background-color: #FEF9C3; border-left: 4px solid #EAB308; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-hy { background-color: #FFF1F2; border-left: 4px solid #F43F5E; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-quiz { background-color: #F0F9FF; border-left: 4px solid #0EA5E9; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+    .box-ans { background-color: #F0FDF4; border-left: 4px solid #22C55E; padding: 4px 12px; margin: 10px 0 4px 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
     
-    /* 🌟 ปรับสี High-Yield Text เป็นสีดำ แต่เน้นคำแดง */
-    .box-hy strong, .box-hy b { color: #DC2626 !important; font-weight: 700; }
+    /* 🌟 ถอด !important ออกเพื่อให้ระบบแยกสีอัตโนมัติทำงานได้ */
+    .box-hy strong, .box-hy b { font-weight: 700; }
     
     /* 🌟 แยกบรรทัดรายการเป็นข้อๆ ให้ห่างกัน */
     .edit-box ul, .edit-box ol { margin-top: 0.5rem; margin-bottom: 1rem; padding-left: 1.5rem; }
@@ -207,42 +207,71 @@ def get_layout_preview(c_pos, hy_pos, q_pos):
     html_str = f"""<div style="width: 100%; height: 180px; border-radius: 10px; background: white; border: 2px solid #E2E8F0; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">{top_box}<div style="flex: 1; display: flex; flex-direction: row;">{left_box}<div style="flex: 1; background: #F1F5F9; border: 2px dashed #CBD5E1; margin: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748B; font-weight: bold; border-radius: 6px;">Slide</div>{right_box}</div>{bottom_box}</div>"""
     st.markdown(html_str, unsafe_allow_html=True)
 
-# 🌟 ฟังก์ชันจัดการตกแต่ง HTML Box และแก้บั๊กดอกจัน
+# 🌟 ฟังก์ชันจัดการตกแต่ง HTML Box และแก้บั๊กดอกจัน + สลับสี High-Yield
 def apply_custom_tags(text):
-    # 1. แก้บั๊กดอกจัน (Word Boundary ของภาษาไทย) โดยการบังคับแปลงเป็น <strong> ก่อน
-    text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+    # 1. แก้บั๊กดอกจัน และระบบทำสีแยกประเด็นสำหรับ High-Yield
+    lines = text.split('\n')
+    # ชุดสีที่จัดเตรียมไว้ให้เพื่อความสวยงาม: แดง, น้ำเงิน, เขียวเข้ม, ม่วง, ส้ม, ฟ้า, ชมพู
+    colors = ["#DC2626", "#2563EB", "#059669", "#7C3AED", "#EA580C", "#0891B2", "#DB2777"] 
+    color_idx = 0
+    in_high_yield = False
+    new_lines = []
+    
+    for line in lines:
+        if "High-Yield:" in line or "🚨 High-Yield" in line:
+            in_high_yield = True
+            color_idx = 0
+        elif any(sec in line for sec in ["Quiz:", "Trick:", "การนำไปใช้ในคลินิก:", "ระวัง:", "กลไก/รายละเอียดและอาการ:", "Concept หลัก:", "Intro:", "เฉลย:"]):
+            in_high_yield = False
+        
+        if in_high_yield:
+            # ถ้าขึ้นข้อใหม่ (Bullet หรือตัวเลข) ให้เปลี่ยนสี
+            if re.match(r'^(\s*[-*]\s|\s*\d+\.\s)', line) or line.strip().startswith("- key"):
+                current_color = colors[color_idx % len(colors)]
+                color_idx += 1
+            else:
+                idx_to_use = (color_idx - 1) if color_idx > 0 else 0
+                current_color = colors[idx_to_use % len(colors)]
+        else:
+            current_color = "#DC2626" # หัวข้ออื่นๆ ใช้ตัวหนาสีแดงมาตรฐาน
+        
+        # แปลง **คำ** เป็น <strong> พร้อมฉีดสีใส่โดยตรง
+        line = re.sub(r'\*\*(.*?)\*\*', f"<strong style='color: {current_color}; font-weight: bold;'>\\1</strong>", line)
+        new_lines.append(line)
+        
+    text = '\n'.join(new_lines)
     
     # 2. แปลง Markdown เป็น HTML
     html = markdown.markdown(text, extensions=['tables'])
     
-    # 3. สวมกรอบ UI สีสันสวยงามให้กับหัวข้อต่างๆ (รองรับทั้งแบบมี/ไม่มีแท็ก strong คลุม)
+    # 3. สวมกรอบ UI สีสันสวยงามให้กับหัวข้อต่างๆ (ปรับขนาด font ให้เล็กลง)
     replacements = [
-        ("Intro:", "<div class='box-intro'><b style='color: #475569; font-size: 1.05em;'>🔗 เชื่อมโยงเนื้อหา (Intro)</b></div>"),
-        ("<strong>Intro:</strong>", "<div class='box-intro'><b style='color: #475569; font-size: 1.05em;'>🔗 เชื่อมโยงเนื้อหา (Intro)</b></div>"),
+        ("Intro:", "<div class='box-intro'><b style='color: #475569; font-size: 0.95em;'>🔗 เชื่อมโยงเนื้อหา (Intro)</b></div>"),
+        ("<strong>Intro:</strong>", "<div class='box-intro'><b style='color: #475569; font-size: 0.95em;'>🔗 เชื่อมโยงเนื้อหา (Intro)</b></div>"),
         
-        ("Concept หลัก:", "<div class='box-concept'><b style='color: #4338CA; font-size: 1.05em;'>🎯 Concept หลัก</b></div>"),
-        ("<strong>Concept หลัก:</strong>", "<div class='box-concept'><b style='color: #4338CA; font-size: 1.05em;'>🎯 Concept หลัก</b></div>"),
+        ("Concept หลัก:", "<div class='box-concept'><b style='color: #4338CA; font-size: 0.95em;'>🎯 Concept หลัก</b></div>"),
+        ("<strong>Concept หลัก:</strong>", "<div class='box-concept'><b style='color: #4338CA; font-size: 0.95em;'>🎯 Concept หลัก</b></div>"),
         
-        ("กลไก/รายละเอียดและอาการ:", "<div class='box-mech'><b style='color: #334155; font-size: 1.05em;'>⚙️ กลไกและอาการ</b></div>"),
-        ("<strong>กลไก/รายละเอียดและอาการ:</strong>", "<div class='box-mech'><b style='color: #334155; font-size: 1.05em;'>⚙️ กลไกและอาการ</b></div>"),
+        ("กลไก/รายละเอียดและอาการ:", "<div class='box-mech'><b style='color: #334155; font-size: 0.95em;'>⚙️ กลไกและอาการ</b></div>"),
+        ("<strong>กลไก/รายละเอียดและอาการ:</strong>", "<div class='box-mech'><b style='color: #334155; font-size: 0.95em;'>⚙️ กลไกและอาการ</b></div>"),
         
-        ("การนำไปใช้ในคลินิก:", "<div class='box-clinic'><b style='color: #0F766E; font-size: 1.05em;'>🩺 การนำไปใช้ในคลินิก</b></div>"),
-        ("<strong>การนำไปใช้ในคลินิก:</strong>", "<div class='box-clinic'><b style='color: #0F766E; font-size: 1.05em;'>🩺 การนำไปใช้ในคลินิก</b></div>"),
+        ("การนำไปใช้ในคลินิก:", "<div class='box-clinic'><b style='color: #0F766E; font-size: 0.95em;'>🩺 การนำไปใช้ในคลินิก</b></div>"),
+        ("<strong>การนำไปใช้ในคลินิก:</strong>", "<div class='box-clinic'><b style='color: #0F766E; font-size: 0.95em;'>🩺 การนำไปใช้ในคลินิก</b></div>"),
         
-        ("ระวัง:", "<div class='box-warn'><b style='color: #C2410C; font-size: 1.05em;'>⚠️ ระวัง</b></div>"),
-        ("<strong>ระวัง:</strong>", "<div class='box-warn'><b style='color: #C2410C; font-size: 1.05em;'>⚠️ ระวัง</b></div>"),
+        ("ระวัง:", "<div class='box-warn'><b style='color: #C2410C; font-size: 0.95em;'>⚠️ ระวัง</b></div>"),
+        ("<strong>ระวัง:</strong>", "<div class='box-warn'><b style='color: #C2410C; font-size: 0.95em;'>⚠️ ระวัง</b></div>"),
         
-        ("Trick:", "<div class='box-trick'><b style='color: #A16207; font-size: 1.05em;'>💡 Trick จำ</b></div>"),
-        ("<strong>Trick:</strong>", "<div class='box-trick'><b style='color: #A16207; font-size: 1.05em;'>💡 Trick จำ</b></div>"),
+        ("Trick:", "<div class='box-trick'><b style='color: #A16207; font-size: 0.95em;'>💡 Trick จำ</b></div>"),
+        ("<strong>Trick:</strong>", "<div class='box-trick'><b style='color: #A16207; font-size: 0.95em;'>💡 Trick จำ</b></div>"),
         
-        ("High-Yield:", "<div class='box-hy'><b style='color: #BE123C; font-size: 1.05em;'>🚨 High-Yield</b></div>"),
-        ("<strong>High-Yield:</strong>", "<div class='box-hy'><b style='color: #BE123C; font-size: 1.05em;'>🚨 High-Yield</b></div>"),
+        ("High-Yield:", "<div class='box-hy'><b style='color: #BE123C; font-size: 0.95em;'>🚨 High-Yield</b></div>"),
+        ("<strong>High-Yield:</strong>", "<div class='box-hy'><b style='color: #BE123C; font-size: 0.95em;'>🚨 High-Yield</b></div>"),
         
-        ("Quiz:", "<div class='box-quiz'><b style='color: #0369A1; font-size: 1.05em;'>📝 Quiz</b></div>"),
-        ("<strong>Quiz:</strong>", "<div class='box-quiz'><b style='color: #0369A1; font-size: 1.05em;'>📝 Quiz</b></div>"),
+        ("Quiz:", "<div class='box-quiz'><b style='color: #0369A1; font-size: 0.95em;'>📝 Quiz</b></div>"),
+        ("<strong>Quiz:</strong>", "<div class='box-quiz'><b style='color: #0369A1; font-size: 0.95em;'>📝 Quiz</b></div>"),
         
-        ("เฉลย:", "<div class='box-ans'><b style='color: #15803D; font-size: 1.05em;'>🎯 เฉลย</b></div>"),
-        ("<strong>เฉลย:</strong>", "<div class='box-ans'><b style='color: #15803D; font-size: 1.05em;'>🎯 เฉลย</b></div>"),
+        ("เฉลย:", "<div class='box-ans'><b style='color: #15803D; font-size: 0.95em;'>🎯 เฉลย</b></div>"),
+        ("<strong>เฉลย:</strong>", "<div class='box-ans'><b style='color: #15803D; font-size: 0.95em;'>🎯 เฉลย</b></div>"),
     ]
     
     for old, new in replacements:
@@ -325,7 +354,7 @@ with st.sidebar:
 
     get_layout_preview(content_pos, hy_pos, quiz_pos)
 
-    # 🌟 ระบบ Customize Prompt (แก้ไขบั๊ก Duplicate ID แล้ว)
+    # 🌟 ระบบ Customize Prompt 
     st.markdown("### 🛠️ ปรับแต่ง Prompt (Customize)")
     use_custom_prompt = st.checkbox("เปิดใช้งานแก้ไข Prompt", value=st.session_state.use_custom_prompt, disabled=is_locked)
     
@@ -341,7 +370,7 @@ with st.sidebar:
 2. **ห้ามข้ามการอธิบายเนื้อหาเด็ดขาด!** ให้เขียนชิดขอบซ้าย ไม่ต้องเว้นวรรคเข้าข้างใน
 3. **คำย่อและคำศัพท์:** หากมีคำย่อครั้งแรกในหน้า ให้ใส่วงเล็บคำเต็มภาษาอังกฤษต่อท้ายเสมอ คำศัพท์แพทย์/โรค/อาการ ให้ใส่วงเล็บภาษาอังกฤษต่อท้ายด้วย (เช่น ไอ (cough))
 4. **ต้องเน้นตัวหนาที่คำสำคัญ** เพื่อให้สะดุดตา
-5. การอธิบายเหตุการณ์สำคัญ/อาการ/กลไก **ต้องมีการให้เหตุผลโดยใช้คำว่า '...เพราะ...' เสมอ**
+5. การอธิบายเหตุการณ์สำคัญ/อาการ/กลไก **ต้องมีการให้เหตุผลโดยใช้คำว่า '...เพราะ...' เสมอ** เพื่อให้ผู้อ่านเข้าใจและจดจำได้นาน
 6. ⚠️ **กฎพิเศษสำหรับข้อสอบ:** ถ้าเนื้อหาในหน้านั้นเป็น "ข้อสอบ", "คำถาม", หรือ "โจทย์" ให้เปลี่ยนการอธิบายเป็นเฉลยข้อสอบดังนี้:
    - โจทย์ถามอะไร?
    - ตอบข้อไหน?
@@ -618,17 +647,18 @@ if st.session_state.pdf_bytes:
                                 @font-face {{ font-family: 'T'; src: url('THSarabunNew.ttf'); }}
                                 @font-face {{ font-family: 'T'; font-weight: bold; src: url('THSarabunNew Bold.ttf'); }}
                                 body {{ font-family: 'T'; font-size: {f_size}px; line-height: 1.5; color: #0F172A; margin: 0; padding: 0; }} 
-                                b, strong {{ color: #DC2626; font-weight: bold; }} /* เน้นคำสีแดง */
+                                b, strong {{ font-weight: bold; }} /* สีจะถูกคุมโดยระบบแยกสีอัตโนมัติแล้ว */
                                 
-                                .box-intro {{ background-color: #F8FAFC; border-left: 4px solid #94A3B8; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-concept {{ background-color: #EEF2FF; border-left: 4px solid #6366F1; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-mech {{ background-color: #F1F5F9; border-left: 4px solid #475569; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-clinic {{ background-color: #F0FDFA; border-left: 4px solid #14B8A6; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-warn {{ background-color: #FFF7ED; border-left: 4px solid #F97316; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-trick {{ background-color: #FEF9C3; border-left: 4px solid #EAB308; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-hy {{ background-color: #FFF1F2; border-left: 4px solid #F43F5E; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-quiz {{ background-color: #F0F9FF; border-left: 4px solid #0EA5E9; padding: 6px 12px; margin: 12px 0 8px 0; }}
-                                .box-ans {{ background-color: #F0FDF4; border-left: 4px solid #22C55E; padding: 6px 12px; margin: 12px 0 8px 0; }}
+                                /* ปรับปรุงกล่องหัวข้อใน PDF ให้เล็กลง ประหยัดพื้นที่ */
+                                .box-intro {{ background-color: #F8FAFC; border-left: 3px solid #94A3B8; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-concept {{ background-color: #EEF2FF; border-left: 3px solid #6366F1; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-mech {{ background-color: #F1F5F9; border-left: 3px solid #475569; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-clinic {{ background-color: #F0FDFA; border-left: 3px solid #14B8A6; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-warn {{ background-color: #FFF7ED; border-left: 3px solid #F97316; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-trick {{ background-color: #FEF9C3; border-left: 3px solid #EAB308; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-hy {{ background-color: #FFF1F2; border-left: 3px solid #F43F5E; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-quiz {{ background-color: #F0F9FF; border-left: 3px solid #0EA5E9; padding: 2px 8px; margin: 6px 0 4px 0; }}
+                                .box-ans {{ background-color: #F0FDF4; border-left: 3px solid #22C55E; padding: 2px 8px; margin: 6px 0 4px 0; }}
                                 
                                 table {{ border-collapse: collapse; width: 100%; margin-top: 10px; margin-bottom: 10px; }} 
                                 th {{ background-color: #F8FAFC; border: 1px solid #CBD5E1; padding: 6px; color: #334155; text-align: left; }}
@@ -752,7 +782,7 @@ if st.session_state.pdf_bytes:
 
                 pattern_parts = []
                 if want_content: 
-                    # 🌟 ปรับโครงสร้างเนื้อหาตามความต้องการข้อ 1 และ 3 (เนื้อหากระชับ, เปรียบเทียบ, เหตุผล, ทริค)
+                    # 🌟 ปรับโครงสร้างเนื้อหาตามความต้องการ (เนื้อหากระชับ, เปรียบเทียบ, เหตุผล, ทริค)
                     content_instruction = (
                         "เนื้อหาหลัก (แบ่งเป็นหัวข้อย่อยดังนี้ เขียนติดขอบซ้ายไม่ต้องเว้นวรรคเข้าข้างใน):\n"
                         "Intro: (เกริ่นนำ 1-2 ประโยคสั้นๆ เพื่อเชื่อมโยงเนื้อหาสไลด์หน้านี้ ให้ลื่นไหลต่อจากหน้าก่อนหน้า อิงจาก Global Context ห้ามใช้คำทักทายเด็ดขาด ให้เหมือนกำลังเล่าเรื่องต่อเนื่อง)\n\n"
@@ -765,7 +795,7 @@ if st.session_state.pdf_bytes:
                         
                     pattern_parts.append(content_instruction)
                     
-                if want_summary: pattern_parts.append("High-Yield:\n- (สรุปจุดตายที่ออกสอบ กระชับสุดๆ รันเป็น bullet -)")
+                if want_summary: pattern_parts.append("High-Yield:\n- key1: **(คีย์เวิร์ด/จุดตายที่ 1)** (อธิบายด้วยประโยคที่กระชับ อ่านแล้วเข้าใจทันที จำได้นาน)\n- key2: **(คีย์เวิร์ด/จุดตายที่ 2)** (อธิบายด้วยประโยคที่กระชับ อ่านแล้วเข้าใจทันที จำได้นาน)")
                 if want_quiz: 
                     q_sec = f"Quiz:\nQ1: (คำถามสั้นๆเน้นทบทวนความจำ ไม่ต้องมีตัวเลือก กขคง.)\n\nQ2: (คำถาม)" if quiz_count >= 2 else f"Quiz:\nQ1: (คำถามสั้นๆเน้นทบทวนความจำ ไม่ต้องมีตัวเลือก กขคง.)"
                     if want_answer: q_sec += f"\n\nเฉลย:\nA1: (เฉลยสั้นๆ กระชับ)\n\nA2: (เฉลยสั้นๆ กระชับ)" if quiz_count >= 2 else f"\n\nเฉลย:\nA1: (เฉลยสั้นๆ กระชับ)"
